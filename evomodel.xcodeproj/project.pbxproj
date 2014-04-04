@@ -21,7 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		42A1609316B82FDB0007755C /* all_ones.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42F4EE6916AEE845000123A4 /* all_ones.cpp */; };
+		42A1609316B82FDB0007755C /* evomodel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42F4EE6916AEE845000123A4 /* evomodel.cpp */; };
 		42F4EE5F16AEE80D000123A4 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B7A9B616305C4B00BDBA8A /* libz.dylib */; };
 /* End PBXBuildFile section */
 
@@ -51,11 +51,11 @@
 		42441B3E15862E1B009863BE /* Jamroot */ = {isa = PBXFileReference; lastKnownFileType = text; path = Jamroot; sourceTree = "<group>"; };
 		42706B11166AF51C003FB2E3 /* template.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = template.xcconfig; sourceTree = "<group>"; };
 		4281FF0216C4929F0066610C /* all-ones.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "all-ones.cfg"; sourceTree = "<group>"; };
-		42908C4916BEA43A00712DA8 /* template.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = template.h; sourceTree = "<group>"; };
+		42908C4916BEA43A00712DA8 /* evomodel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = evomodel.h; sourceTree = "<group>"; };
 		42B7A9B616305C4B00BDBA8A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		42C0BD14166129C400009440 /* analysis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = analysis.h; sourceTree = "<group>"; };
 		42F4EE6616AEE80D000123A4 /* all-ones */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "all-ones"; sourceTree = BUILT_PRODUCTS_DIR; };
-		42F4EE6916AEE845000123A4 /* all_ones.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = all_ones.cpp; sourceTree = "<group>"; };
+		42F4EE6916AEE845000123A4 /* evomodel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = evomodel.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +101,9 @@
 		42441A01158613F5009863BE /* src */ = {
 			isa = PBXGroup;
 			children = (
-				42F4EE6916AEE845000123A4 /* all_ones.cpp */,
+				42F4EE6916AEE845000123A4 /* evomodel.cpp */,
 				42C0BD14166129C400009440 /* analysis.h */,
-				42908C4916BEA43A00712DA8 /* template.h */,
+				42908C4916BEA43A00712DA8 /* evomodel.h */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -120,9 +120,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		42F4EE5B16AEE80D000123A4 /* all-ones */ = {
+		42F4EE5B16AEE80D000123A4 /* evomodel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 42F4EE6316AEE80D000123A4 /* Build configuration list for PBXNativeTarget "all-ones" */;
+			buildConfigurationList = 42F4EE6316AEE80D000123A4 /* Build configuration list for PBXNativeTarget "evomodel" */;
 			buildPhases = (
 				42F4EE5C16AEE80D000123A4 /* Sources */,
 				42F4EE5E16AEE80D000123A4 /* Frameworks */,
@@ -132,7 +132,7 @@
 			);
 			dependencies = (
 			);
-			name = "all-ones";
+			name = evomodel;
 			productName = "ocr-single";
 			productReference = 42F4EE6616AEE80D000123A4 /* all-ones */;
 			productType = "com.apple.product-type.tool";
@@ -145,7 +145,7 @@
 			attributes = {
 				ORGANIZATIONNAME = "Michigan State University";
 			};
-			buildConfigurationList = 4244196A15859482009863BE /* Build configuration list for PBXProject "template" */;
+			buildConfigurationList = 4244196A15859482009863BE /* Build configuration list for PBXProject "evomodel" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -158,7 +158,7 @@
 			projectRoot = "";
 			targets = (
 				42720F6F163823AF008C8E63 /* all */,
-				42F4EE5B16AEE80D000123A4 /* all-ones */,
+				42F4EE5B16AEE80D000123A4 /* evomodel */,
 			);
 		};
 /* End PBXProject section */
@@ -168,7 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42A1609316B82FDB0007755C /* all_ones.cpp in Sources */,
+				42A1609316B82FDB0007755C /* evomodel.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,7 +177,7 @@
 /* Begin PBXTargetDependency section */
 		42A160C516B87E2F0007755C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 42F4EE5B16AEE80D000123A4 /* all-ones */;
+			target = 42F4EE5B16AEE80D000123A4 /* evomodel */;
 			targetProxy = 42A160C416B87E2F0007755C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -224,7 +224,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4244196A15859482009863BE /* Build configuration list for PBXProject "template" */ = {
+		4244196A15859482009863BE /* Build configuration list for PBXProject "evomodel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4244197815859482009863BE /* Debug */,
@@ -242,7 +242,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		42F4EE6316AEE80D000123A4 /* Build configuration list for PBXNativeTarget "all-ones" */ = {
+		42F4EE6316AEE80D000123A4 /* Build configuration list for PBXNativeTarget "evomodel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				42F4EE6416AEE80D000123A4 /* Debug */,

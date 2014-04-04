@@ -1,6 +1,6 @@
-/* template.h
+/* evomodel.h
  *
- * This file is part of Template.
+ * This file is part of EvoModel.
  *
  * Copyright 2014 David B. Knoester.
  *
@@ -17,8 +17,8 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef _TEMPLATE_H_
-#define _TEMPLATE_H_
+#ifndef _EVOMODEL_H_
+#define _EVOMODEL_H_
 
 
 #endif

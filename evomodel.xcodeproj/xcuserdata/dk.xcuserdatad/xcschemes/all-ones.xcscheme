@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "42F4EE5B16AEE80D000123A4"
                BuildableName = "all-ones"
-               BlueprintName = "all-ones"
-               ReferencedContainer = "container:template.xcodeproj">
+               BlueprintName = "evomodel"
+               ReferencedContainer = "container:evomodel.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "42F4EE5B16AEE80D000123A4"
             BuildableName = "all-ones"
-            BlueprintName = "all-ones"
-            ReferencedContainer = "container:template.xcodeproj">
+            BlueprintName = "evomodel"
+            ReferencedContainer = "container:evomodel.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -53,8 +53,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "42F4EE5B16AEE80D000123A4"
             BuildableName = "all-ones"
-            BlueprintName = "all-ones"
-            ReferencedContainer = "container:template.xcodeproj">
+            BlueprintName = "evomodel"
+            ReferencedContainer = "container:evomodel.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -71,8 +71,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "42F4EE5B16AEE80D000123A4"
             BuildableName = "all-ones"
-            BlueprintName = "all-ones"
-            ReferencedContainer = "container:template.xcodeproj">
+            BlueprintName = "evomodel"
+            ReferencedContainer = "container:evomodel.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

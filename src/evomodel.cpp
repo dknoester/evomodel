@@ -1,6 +1,6 @@
-/* all_ones.cpp
+/* evomodel.cpp
  *
- * This file is part of Template.
+ * This file is part of EvoModel.
  *
  * Copyright 2014 David B. Knoester.
  *
@@ -25,7 +25,7 @@
 #include <ea/datafiles/fitness.h>
 using namespace ealib;
 
-#include "template.h"
+#include "evomodel.h"
 #include "analysis.h"
 
 /*! Evolutionary algorithm definition.  EAs are assembled by providing a series of

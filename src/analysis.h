@@ -1,6 +1,6 @@
 /* analysis.h
  *
- * This file is part of Template.
+ * This file is part of EvoModel.
  *
  * Copyright 2014 David B. Knoester.
  *

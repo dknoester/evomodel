@@ -17,7 +17,7 @@
                BlueprintIdentifier = "42720F6F163823AF008C8E63"
                BuildableName = "all"
                BlueprintName = "all"
-               ReferencedContainer = "container:template.xcodeproj">
+               ReferencedContainer = "container:evomodel.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
