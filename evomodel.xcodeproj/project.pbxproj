@@ -21,7 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		42A1609316B82FDB0007755C /* evomodel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42F4EE6916AEE845000123A4 /* evomodel.cpp */; };
+		423243D918F075120047D8ED /* libea.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 423243D818F075120047D8ED /* libea.a */; };
+		42A1609316B82FDB0007755C /* normal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42F4EE6916AEE845000123A4 /* normal.cpp */; };
 		42F4EE5F16AEE80D000123A4 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B7A9B616305C4B00BDBA8A /* libz.dylib */; };
 /* End PBXBuildFile section */
 
@@ -48,14 +49,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		423243D818F075120047D8ED /* libea.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libea.a; path = ../DerivedData/research/Build/Products/Debug/libea.a; sourceTree = "<group>"; };
 		42441B3E15862E1B009863BE /* Jamroot */ = {isa = PBXFileReference; lastKnownFileType = text; path = Jamroot; sourceTree = "<group>"; };
 		42706B11166AF51C003FB2E3 /* template.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = template.xcconfig; sourceTree = "<group>"; };
-		4281FF0216C4929F0066610C /* all-ones.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "all-ones.cfg"; sourceTree = "<group>"; };
-		42908C4916BEA43A00712DA8 /* evomodel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = evomodel.h; sourceTree = "<group>"; };
+		4281FF0216C4929F0066610C /* evomodel-normal.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "evomodel-normal.cfg"; sourceTree = "<group>"; };
+		42908C4916BEA43A00712DA8 /* normal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = normal.h; sourceTree = "<group>"; };
 		42B7A9B616305C4B00BDBA8A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		42C0BD14166129C400009440 /* analysis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = analysis.h; sourceTree = "<group>"; };
-		42F4EE6616AEE80D000123A4 /* all-ones */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "all-ones"; sourceTree = BUILT_PRODUCTS_DIR; };
-		42F4EE6916AEE845000123A4 /* evomodel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = evomodel.cpp; sourceTree = "<group>"; };
+		42F4EE6616AEE80D000123A4 /* evomodel */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = evomodel; sourceTree = BUILT_PRODUCTS_DIR; };
+		42F4EE6916AEE845000123A4 /* normal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = normal.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				423243D918F075120047D8ED /* libea.a in Frameworks */,
 				42F4EE5F16AEE80D000123A4 /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,7 +87,7 @@
 		4244197115859482009863BE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				42F4EE6616AEE80D000123A4 /* all-ones */,
+				42F4EE6616AEE80D000123A4 /* evomodel */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,6 +95,7 @@
 		424419941585961A009863BE /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				423243D818F075120047D8ED /* libea.a */,
 				42B7A9B616305C4B00BDBA8A /* libz.dylib */,
 			);
 			name = lib;
@@ -101,9 +105,9 @@
 		42441A01158613F5009863BE /* src */ = {
 			isa = PBXGroup;
 			children = (
-				42F4EE6916AEE845000123A4 /* evomodel.cpp */,
+				42F4EE6916AEE845000123A4 /* normal.cpp */,
+				42908C4916BEA43A00712DA8 /* normal.h */,
 				42C0BD14166129C400009440 /* analysis.h */,
-				42908C4916BEA43A00712DA8 /* evomodel.h */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -111,7 +115,7 @@
 		42441A7A15861669009863BE /* etc */ = {
 			isa = PBXGroup;
 			children = (
-				4281FF0216C4929F0066610C /* all-ones.cfg */,
+				4281FF0216C4929F0066610C /* evomodel-normal.cfg */,
 				42706B11166AF51C003FB2E3 /* template.xcconfig */,
 			);
 			path = etc;
@@ -120,9 +124,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		42F4EE5B16AEE80D000123A4 /* evomodel */ = {
+		42F4EE5B16AEE80D000123A4 /* evomodel-normal */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 42F4EE6316AEE80D000123A4 /* Build configuration list for PBXNativeTarget "evomodel" */;
+			buildConfigurationList = 42F4EE6316AEE80D000123A4 /* Build configuration list for PBXNativeTarget "evomodel-normal" */;
 			buildPhases = (
 				42F4EE5C16AEE80D000123A4 /* Sources */,
 				42F4EE5E16AEE80D000123A4 /* Frameworks */,
@@ -132,9 +136,9 @@
 			);
 			dependencies = (
 			);
-			name = evomodel;
+			name = "evomodel-normal";
 			productName = "ocr-single";
-			productReference = 42F4EE6616AEE80D000123A4 /* all-ones */;
+			productReference = 42F4EE6616AEE80D000123A4 /* evomodel */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -158,7 +162,7 @@
 			projectRoot = "";
 			targets = (
 				42720F6F163823AF008C8E63 /* all */,
-				42F4EE5B16AEE80D000123A4 /* evomodel */,
+				42F4EE5B16AEE80D000123A4 /* evomodel-normal */,
 			);
 		};
 /* End PBXProject section */
@@ -168,7 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42A1609316B82FDB0007755C /* evomodel.cpp in Sources */,
+				42A1609316B82FDB0007755C /* normal.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,7 +181,7 @@
 /* Begin PBXTargetDependency section */
 		42A160C516B87E2F0007755C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 42F4EE5B16AEE80D000123A4 /* evomodel */;
+			target = 42F4EE5B16AEE80D000123A4 /* evomodel-normal */;
 			targetProxy = 42A160C416B87E2F0007755C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -212,12 +216,20 @@
 		42F4EE6416AEE80D000123A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/dk/Documents/repositories/research.hg/src/DerivedData/research/Build/Products/Debug,
+				);
 			};
 			name = Debug;
 		};
 		42F4EE6516AEE80D000123A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/dk/Documents/repositories/research.hg/src/DerivedData/research/Build/Products/Debug,
+				);
 			};
 			name = Release;
 		};
@@ -242,7 +254,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		42F4EE6316AEE80D000123A4 /* Build configuration list for PBXNativeTarget "evomodel" */ = {
+		42F4EE6316AEE80D000123A4 /* Build configuration list for PBXNativeTarget "evomodel-normal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				42F4EE6416AEE80D000123A4 /* Debug */,

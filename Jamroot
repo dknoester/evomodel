@@ -3,12 +3,11 @@ local HOME = [ os.environ HOME ] ;
 
 use-project /libea : ../ealib/libea ;
 
-exe all-ones :
-    src/all_ones.cpp
+exe evomodel-normal :
+    src/normal.cpp
     /libea//libea
     /libea//libea_runner
-    /libmkv//libmkv
     : <include>./include <link>static
     ;
 
-install dist : all-ones : <location>$(HOME)/bin ;
+install dist : evomodel-normal : <location>$(HOME)/bin ;
