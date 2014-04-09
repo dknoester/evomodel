@@ -17,4 +17,11 @@ exe evomodel-joint :
     : <include>./include <link>static
     ;
 
-install dist : evomodel-normal evomodel-joint : <location>$(HOME)/bin ;
+exe evomodel-varjoint :
+    src/varjoint.cpp
+    /libea//libea
+    /libea//libea_runner
+    : <include>./include <link>static
+    ;
+
+install dist : evomodel-normal evomodel-joint evomodel-varjoint : <location>$(HOME)/bin ;
