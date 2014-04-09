@@ -25,6 +25,9 @@
 		428CB4F918F5A1D500E6093D /* libea.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 423243D818F075120047D8ED /* libea.a */; };
 		428CB4FA18F5A1D500E6093D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B7A9B616305C4B00BDBA8A /* libz.dylib */; };
 		428CB50318F5A22100E6093D /* joint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 428CB50018F5A20700E6093D /* joint.cpp */; };
+		428CB50918F5D09200E6093D /* libea.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 423243D818F075120047D8ED /* libea.a */; };
+		428CB50A18F5D09200E6093D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B7A9B616305C4B00BDBA8A /* libz.dylib */; };
+		428CB51218F5D0AD00E6093D /* varjoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 428CB51018F5D0AD00E6093D /* varjoint.cpp */; };
 		42A1609316B82FDB0007755C /* normal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42F4EE6916AEE845000123A4 /* normal.cpp */; };
 		42F4EE5F16AEE80D000123A4 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B7A9B616305C4B00BDBA8A /* libz.dylib */; };
 /* End PBXBuildFile section */
@@ -41,6 +44,15 @@
 
 /* Begin PBXCopyFilesBuildPhase section */
 		428CB4FB18F5A1D500E6093D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		428CB50B18F5D09200E6093D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -69,6 +81,10 @@
 		428CB50018F5A20700E6093D /* joint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = joint.cpp; sourceTree = "<group>"; };
 		428CB50118F5A20700E6093D /* joint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = joint.h; sourceTree = "<group>"; };
 		428CB50418F5A7F600E6093D /* evomodel-joint.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "evomodel-joint.cfg"; sourceTree = "<group>"; };
+		428CB50F18F5D09200E6093D /* evomodel-varjoint */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "evomodel-varjoint"; sourceTree = BUILT_PRODUCTS_DIR; };
+		428CB51018F5D0AD00E6093D /* varjoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = varjoint.cpp; sourceTree = "<group>"; };
+		428CB51118F5D0AD00E6093D /* varjoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = varjoint.h; sourceTree = "<group>"; };
+		428CB51318F5D11C00E6093D /* evomodel-varjoint.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "evomodel-varjoint.cfg"; sourceTree = "<group>"; };
 		42908C4916BEA43A00712DA8 /* normal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = normal.h; sourceTree = "<group>"; };
 		42B7A9B616305C4B00BDBA8A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		42C0BD14166129C400009440 /* analysis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = analysis.h; sourceTree = "<group>"; };
@@ -83,6 +99,15 @@
 			files = (
 				428CB4F918F5A1D500E6093D /* libea.a in Frameworks */,
 				428CB4FA18F5A1D500E6093D /* libz.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		428CB50818F5D09200E6093D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				428CB50918F5D09200E6093D /* libea.a in Frameworks */,
+				428CB50A18F5D09200E6093D /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +139,7 @@
 			children = (
 				42F4EE6616AEE80D000123A4 /* evomodel */,
 				428CB4FF18F5A1D500E6093D /* evomodel-joint */,
+				428CB50F18F5D09200E6093D /* evomodel-varjoint */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,6 +159,8 @@
 			children = (
 				428CB50018F5A20700E6093D /* joint.cpp */,
 				428CB50118F5A20700E6093D /* joint.h */,
+				428CB51018F5D0AD00E6093D /* varjoint.cpp */,
+				428CB51118F5D0AD00E6093D /* varjoint.h */,
 				42F4EE6916AEE845000123A4 /* normal.cpp */,
 				42908C4916BEA43A00712DA8 /* normal.h */,
 				42C0BD14166129C400009440 /* analysis.h */,
@@ -145,6 +173,7 @@
 			children = (
 				4281FF0216C4929F0066610C /* evomodel-normal.cfg */,
 				428CB50418F5A7F600E6093D /* evomodel-joint.cfg */,
+				428CB51318F5D11C00E6093D /* evomodel-varjoint.cfg */,
 				42706B11166AF51C003FB2E3 /* template.xcconfig */,
 			);
 			path = etc;
@@ -168,6 +197,23 @@
 			name = "evomodel-joint";
 			productName = "ocr-single";
 			productReference = 428CB4FF18F5A1D500E6093D /* evomodel-joint */;
+			productType = "com.apple.product-type.tool";
+		};
+		428CB50518F5D09200E6093D /* evomodel-varjoint */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 428CB50C18F5D09200E6093D /* Build configuration list for PBXNativeTarget "evomodel-varjoint" */;
+			buildPhases = (
+				428CB50618F5D09200E6093D /* Sources */,
+				428CB50818F5D09200E6093D /* Frameworks */,
+				428CB50B18F5D09200E6093D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "evomodel-varjoint";
+			productName = "ocr-single";
+			productReference = 428CB50F18F5D09200E6093D /* evomodel-varjoint */;
 			productType = "com.apple.product-type.tool";
 		};
 		42F4EE5B16AEE80D000123A4 /* evomodel-normal */ = {
@@ -210,6 +256,7 @@
 				42720F6F163823AF008C8E63 /* all */,
 				42F4EE5B16AEE80D000123A4 /* evomodel-normal */,
 				428CB4F518F5A1D500E6093D /* evomodel-joint */,
+				428CB50518F5D09200E6093D /* evomodel-varjoint */,
 			);
 		};
 /* End PBXProject section */
@@ -220,6 +267,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				428CB50318F5A22100E6093D /* joint.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		428CB50618F5D09200E6093D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				428CB51218F5D0AD00E6093D /* varjoint.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +335,18 @@
 			};
 			name = Release;
 		};
+		428CB50D18F5D09200E6093D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		428CB50E18F5D09200E6093D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
 		42F4EE6416AEE80D000123A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -326,6 +393,15 @@
 			buildConfigurations = (
 				428CB4FD18F5A1D500E6093D /* Debug */,
 				428CB4FE18F5A1D500E6093D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		428CB50C18F5D09200E6093D /* Build configuration list for PBXNativeTarget "evomodel-varjoint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				428CB50D18F5D09200E6093D /* Debug */,
+				428CB50E18F5D09200E6093D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

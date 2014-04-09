@@ -19,6 +19,11 @@
 			<key>orderHint</key>
 			<integer>47</integer>
 		</dict>
+		<key>evomodel-varjoint.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>49</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -118,6 +123,11 @@
 			<true/>
 		</dict>
 		<key>428CB4F518F5A1D500E6093D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>428CB50518F5D09200E6093D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
