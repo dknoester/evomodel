@@ -9,10 +9,15 @@
 			<key>orderHint</key>
 			<integer>45</integer>
 		</dict>
-		<key>evomodel.xcscheme</key>
+		<key>evomodel-joint.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>46</integer>
+			<integer>48</integer>
+		</dict>
+		<key>evomodel-normal.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>47</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -108,6 +113,11 @@
 			<true/>
 		</dict>
 		<key>42841CAB15B1947A00AB18BE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>428CB4F518F5A1D500E6093D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

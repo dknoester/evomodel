@@ -10,4 +10,11 @@ exe evomodel-normal :
     : <include>./include <link>static
     ;
 
-install dist : evomodel-normal : <location>$(HOME)/bin ;
+exe evomodel-joint :
+    src/joint.cpp
+    /libea//libea
+    /libea//libea_runner
+    : <include>./include <link>static
+    ;
+
+install dist : evomodel-normal evomodel-joint : <location>$(HOME)/bin ;
