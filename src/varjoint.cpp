@@ -36,8 +36,7 @@ using namespace ealib;
 typedef evolutionary_algorithm
 < individual<realstring, joint_ks>
 , ancestors::uniform_real
-// , mutation::operators::per_site<mutation::site::uniform_real> // this was 002-joint
-, mutation::operators::indel<mutation::operators::per_site<mutation::site::uniform_real> > // this is 003-varjoint
+, mutation::operators::indel<mutation::operators::per_site<mutation::site::uniform_real> >
 , recombination::asexual
 , generational_models::steady_state<selection::random<with_replacementS>, selection::rank>
 > ea_type;
